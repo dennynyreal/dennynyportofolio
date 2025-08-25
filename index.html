@@ -511,6 +511,8 @@
             justify-content: center;
             margin-right: 15px;
             font-size: 1.2rem;
+            flex-shrink: 0; /* Tambahkan ini agar ikon tidak mengecil */
+
         }
         
         .form-group {
@@ -694,6 +696,34 @@
     margin-bottom: 5px;
     font-size: 16px;
 }
+/* Responsive Design - Perbaikan untuk ikon */
+@media (max-width: 768px) {
+    .contact-item {
+        flex-direction: row; /* Pastikan tetap horizontal di mobile */
+        text-align: left; /* Teks tetap rata kiri */
+        align-items: center; /* Pusatkan vertikal */
+    }
+    
+    .contact-icon {
+        margin-right: 15px; /* Pertahankan margin */
+        margin-bottom: 0; /* Hapus margin bottom */
+        width: 45px; /* Ukuran konsisten */
+        height: 45px; /* Ukuran konsisten */
+        font-size: 1.1rem; /* Ukuran font konsisten */
+    }
+}
+            @media (max-width: 480px) {
+    .contact-icon {
+        width: 40px; /* Sedikit lebih kecil untuk mobile sangat kecil */
+        height: 40px;
+        font-size: 1rem;
+        margin-right: 12px;
+    }
+    
+    .contact-item {
+        padding: 12px; /* Padding sedikit dikurangi */
+    }
+}  
             
         }
     </style>
@@ -762,6 +792,13 @@
                         <h3>SMK Negeri 8 Jember</h3>
                         <p>Jurusan Rekayasa Perangkat Lunak</p>
                         <p>Lulusan dengan Nilai Tertinggi</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 - Sekarang</div>
+                    <div class="timeline-content">
+                        <h3>Politeknik Perkapalan Negeri Surabaya</h3>
+                        <p>Jurusan Teknik Kelistrikan Kapal</p>
                     </div>
                 </div>
                 <div class="timeline-item">
